@@ -1,27 +1,26 @@
 <template>
   <div class="index">
     <el-container style="height: 100%">
-      <el-header>Header</el-header>
-      <el-container>
-        <el-aside width="200px">
-          <asideMenu />
-        </el-aside>
-        <el-main>
-
-        </el-main>
-      </el-container>
+      <el-header>
+        <headerMenu></headerMenu>
+      </el-header>
+      <el-main>
+        <router-view/>
+      </el-main>
     </el-container>
   </div>
 </template>
 
 <script>
-import aside from './aside/index'
+// import aside from './aside/index'
+import header from "@/views/header";
 export default {
   name: 'index',
   props: {
   },
   components: {
-    asideMenu: aside
+    // asideMenu: aside,
+    headerMenu: header
   }
 }
 </script>
@@ -35,6 +34,7 @@ export default {
     color: #f6ca9d;
     text-align: center;
     line-height: 60px;
+    padding: 0;
   }
   .el-aside {
     background-color: rgb(29, 30, 35);
@@ -46,8 +46,8 @@ export default {
   .el-main {
     background-color: #E9EEF3;
     color: #333;
-    text-align: center;
-    line-height: 160px;
+    margin: 0;
+    padding: 0;
   }
 }
 
