@@ -6,7 +6,7 @@
           一致性 Consistency<i class="header-icon el-icon-info"></i>
         </template>
         <div class="itemGroup">
-          <div class="item" v-for="(item, i) in arr" :key="item.type + i">
+          <div @click="handleAddItem(item)" class="item" v-for="(item, i) in arr" :key="item.type + i">
             <i class="icon" :class="item.icon"></i>
             <p>{{item.name}}</p>
           </div>
@@ -18,17 +18,22 @@
 </template>
 
 <script>
+import dashboardMixin from "@/mixins/dashboardMixin";
 export default {
   name: "index",
+  mixins: [dashboardMixin],
   data () {
     return {
       arr: [
-        { name: '折线图', type: 'line', icon: 'el-icon-truck' },
-        { name: '折线图', type: 'line', icon: 'el-icon-truck' },
-        { name: '折线图', type: 'line', icon: 'el-icon-truck' },
-        { name: '折线图', type: 'line', icon: 'el-icon-truck' },
-        { name: '折线图', type: 'line', icon: 'el-icon-truck' },
+        { name: '折线图', type: 'VeLine', icon: 'el-icon-truck' },
+        { name: '折线图', type: 'VePie', icon: 'el-icon-truck' },
       ]
+    }
+  },
+  methods: {
+    handleAddItem (item) {
+      this.$store.commit('dashboard/ADD_ITEM', item)
+      console.log(this.$store)
     }
   }
 }
@@ -45,6 +50,8 @@ export default {
     width: 33%;
     float: left;
     text-align: center;
+    font-size: 12px;
+    margin: 10px 0;
     .icon{
       font-size: 20px;
     }
