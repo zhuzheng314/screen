@@ -44,7 +44,7 @@ export default {
     flex: 1;
   }
   .settingForm{
-    width: 200px;
+    width: 400px;
     height: 100%;
   }
 }

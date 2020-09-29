@@ -44,7 +44,7 @@ export default {
 
 <style lang="less" scoped>
 .chartCont {
-  width: 200px;
+  width: 350px;
   height: 200px;
   border: 1px solid red;
   overflow: hidden;

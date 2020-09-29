@@ -1,12 +1,16 @@
 <template>
   <div>
-    form
+    <FormCont></FormCont>
   </div>
 </template>
 
 <script>
+import FormCont from "./components/FormCont";
 export default {
-name: "index"
+  name: "index",
+  components: {
+    FormCont
+  }
 }
 </script>
 

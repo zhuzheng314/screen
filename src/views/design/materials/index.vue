@@ -27,6 +27,18 @@ export default {
       arr: [
         { name: '折线图', type: 'VeLine', icon: 'el-icon-truck' },
         { name: '折线图', type: 'VePie', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-1', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-2', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-3', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-4', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-5', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-6', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-7', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-8', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-9', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-10', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-11', icon: 'el-icon-truck' },
+        { name: '边框', type: 'dv-border-box-12', icon: 'el-icon-truck' },
       ]
     }
   },
